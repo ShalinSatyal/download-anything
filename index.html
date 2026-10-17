@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta name="description" content="Downly is a simple media downloader interface for supported video and audio sources.">
+
+<title>Downly - Media Downloader</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+<!-- Navigation -->
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            <span class="logo-icon">D</span>
+            <span>Downly<span class="logo-dot">.</span></span>
+        </a>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#features">Features</a>
+            <a href="#platforms">Platforms</a>
+            <a href="#how-it-works">How It Works</a>
+        </nav>
+
+        <a href="#downloader" class="nav-button">
+            Get Started <span>↗</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
+
+        <div class="container hero-container">
+
+            <div class="hero-content">
+
+                <div class="announcement">
+                    <span class="announcement-dot"></span>
+                    Simple. Fast. Convenient.
+                </div>
+
+                <h1>
+                    Your favorite media.
+                    <span>One simple place.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Paste a supported media link, explore available
+                    download options, and manage your downloads
+                    through one clean interface.
+                </p>
+
+                <div class="hero-stats">
+
+                    <div class="stat">
+                        <span class="stat-icon">↗</span>
+                        <div>
+                            <strong>Easy to Use</strong>
+                            <small>Simple workflow</small>
+                        </div>
+                    </div>
+
+                    <div class="stat">
+                        <span class="stat-icon">◈</span>
+                        <div>
+                            <strong>Multiple Sources</strong>
+                            <small>Supported platforms</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Downloader Card -->
+            <div class="downloader-card" id="downloader">
+
+                <div class="card-heading">
+                    <div>
+                        <span class="card-label">MEDIA DOWNLOADER</span>
+                        <h2>Start downloading</h2>
+                    </div>
+
+                    <div class="card-icon">↓</div>
+                </div>
+
+                <p class="card-description">
+                    Paste your media URL below to get started.
+                </p>
+
+                <form id="download-form">
+
+                    <label for="media-url">Media URL</label>
+
+                    <div class="url-input-wrapper">
+
+                        <span class="url-icon">↗</span>
+
+                        <input
+                            type="url"
+                            id="media-url"
+                            name="media-url"
+                            placeholder="Paste your video link here..."
+                            autocomplete="url"
+                            required
+                        >
+
+                        <button type="button" id="paste-button"
+                                class="paste-button">
+                            Paste
+                        </button>
+
+                    </div>
+
+                    <button type="submit" class="analyze-button">
+                        Analyze Link
+                        <span>→</span>
+                    </button>
+
+                    <p class="form-message" id="form-message"
+                       role="status" aria-live="polite"></p>
+
+                </form>
+
+                <div class="card-divider">
+                    <span>SUPPORTED SOURCES</span>
+                </div>
+
+                <div class="supported-icons">
+
+                    <div class="source-item">
+                        <span class="source-icon youtube">▶</span>
+                        <span>YouTube</span>
+                    </div>
+
+                    <div class="source-item">
+                        <span class="source-icon facebook">f</span>
+                        <span>Facebook</span>
+                    </div>
+
+                    <div class="source-item">
+                        <span class="source-icon instagram">◎</span>
+                        <span>Instagram</span>
+                    </div>
+
+                    <div class="source-item">
+                        <span class="source-icon generic">+</span>
+                        <span>More</span>
+                    </div>
+
+                </div>
+
+                <p class="privacy-note">
+                    Use authorized download sources and respect
+                    content owners' rights.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="hero-bottom">
+            <span></span>
+            A simpler way to manage your media
+            <span></span>
+        </div>
+
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="features section-padding" id="features">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">WHY DOWNLY?</span>
+
+                <h2>
+                    Everything you need.
+                    <span>Nothing you don't.</span>
+                </h2>
+
+                <p>
+                    A straightforward media experience without
+                    unnecessary complications.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+
+                    <div class="feature-icon blue-icon">↗</div>
+
+                    <h3>Simple Link Input</h3>
+
+                    <p>
+                        Paste a supported media URL and begin
+                        the process with just a few clicks.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon purple-icon">▤</div>
+
+                    <h3>Multiple Formats</h3>
+
+                    <p>
+                        Display available video and audio formats
+                        when the selected source supports them.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon green-icon">↓</div>
+
+                    <h3>Easy Downloads</h3>
+
+                    <p>
+                        Access supported downloads through a
+                        clean and convenient interface.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon orange-icon">◉</div>
+
+                    <h3>Responsive Design</h3>
+
+                    <p>
+                        Enjoy a consistent experience on desktop,
+                        tablet, and mobile devices.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon pink-icon">◇</div>
+
+                    <h3>Clean Interface</h3>
+
+                    <p>
+                        Focus on the media you want without
+                        cluttered layouts or confusing controls.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon cyan-icon">⌁</div>
+
+                    <h3>Useful Feedback</h3>
+
+                    <p>
+                        Receive clear status messages when a
+                        link is invalid or unsupported.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Platforms Section -->
+    <section class="platforms section-padding" id="platforms">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">SUPPORTED SOURCES</span>
+
+                <h2>
+                    Your media, <span>your choice.</span>
+                </h2>
+
+                <p>
+                    A unified interface for different types of
+                    media sources.
+                </p>
+
+            </div>
+
+
+            <div class="platform-grid">
+
+                <article class="platform-card">
+
+                    <div class="platform-brand youtube">▶</div>
+
+                    <div class="platform-info">
+                        <h3>YouTube</h3>
+                        <p>Supported public media sources</p>
+                    </div>
+
+                    <span class="platform-arrow">↗</span>
+
+                </article>
+
+
+                <article class="platform-card">
+
+                    <div class="platform-brand facebook">f</div>
+
+                    <div class="platform-info">
+                        <h3>Facebook</h3>
+                        <p>Accessible, authorized media</p>
+                    </div>
+
+                    <span class="platform-arrow">↗</span>
+
+                </article>
+
+
+                <article class="platform-card">
+
+                    <div class="platform-brand instagram">◎</div>
+
+                    <div class="platform-info">
+                        <h3>Instagram</h3>
+                        <p>Supported media sources</p>
+                    </div>
+
+                    <span class="platform-arrow">↗</span>
+
+                </article>
+
+
+                <article class="platform-card">
+
+                    <div class="platform-brand direct">▶</div>
+
+                    <div class="platform-info">
+                        <h3>Direct Media Links</h3>
+                        <p>Compatible video and audio files</p>
+                    </div>
+
+                    <span class="platform-arrow">↗</span>
+
+                </article>
+
+            </div>
+
+            <p class="platform-disclaimer">
+                Actual support depends on source availability,
+                platform restrictions, and authorized access.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- How It Works -->
+    <section class="how-it-works section-padding" id="how-it-works">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">THREE SIMPLE STEPS</span>
+
+                <h2>
+                    How it <span>works.</span>
+                </h2>
+
+                <p>
+                    Get started with a simple, straightforward process.
+                </p>
+
+            </div>
+
+
+            <div class="steps-grid">
+
+                <article class="step-card">
+
+                    <div class="step-number">01</div>
+
+                    <div class="step-line"></div>
+
+                    <h3>Copy Your Link</h3>
+
+                    <p>
+                        Copy the URL of a video or media file
+                        that you are authorized to download.
+                    </p>
+
+                </article>
+
+
+                <article class="step-card">
+
+                    <div class="step-number">02</div>
+
+                    <div class="step-line"></div>
+
+                    <h3>Analyze the URL</h3>
+
+                    <p>
+                        Submit the link to identify the source
+                        and check the available options.
+                    </p>
+
+                </article>
+
+
+                <article class="step-card">
+
+                    <div class="step-number">03</div>
+
+                    <div class="step-line"></div>
+
+                    <h3>Download Your Media</h3>
+
+                    <p>
+                        Select an available option and download
+                        your file when the source permits it.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+
+        <div class="container">
+
+            <div class="cta-card">
+
+                <div class="cta-content">
+
+                    <span class="section-label">READY TO BEGIN?</span>
+
+                    <h2>
+                        Your next download
+                        <span>starts here.</span>
+                    </h2>
+
+                    <p>
+                        Paste a supported media link and explore
+                        the available options.
+                    </p>
+
+                    <a href="#downloader" class="cta-button">
+                        Get Started <span>→</span>
+                    </a>
+
+                </div>
+
+                <div class="cta-decoration">
+                    <div class="cta-circle circle-one"></div>
+                    <div class="cta-circle circle-two"></div>
+                    <div class="cta-download-icon">↓</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
